@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML5 CSS3">
+        <meta name="author" content="Nedaa Ryad">
+        <meta name="description" content="E-Commerce-furniture">
+        <title>Shopping Cart | WHITE DOVE</title>
+        <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;800;900&family=Island+Moments&family=Jomhuria&family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <!-- FontAwesome Library-->
+        <link rel="stylesheet" href=" CSS/all.min.css">
+        <!-- Render All Elements Normally -->
+        <link rel="stylesheet" href=" CSS/normalize.css">
+        <!-- Main CSS File -->
+        <link rel="stylesheet" href=" CSS/main.css">
+        <!-- Styles All Medias -->
+        <link rel="stylesheet" href=" CSS/Medias.css">
+    </head>
+
+    <body>
+        <!-- ٍStart Header -->
+        <header class="cart-page">
+            <div class="container">
+                <div class="info">
+                    <p>Welcome to white dove Furniture Store Website</p>
+                    <ul class="links">
+                        <li>
+                            <a href="#" title="Contact us on WhatsApp">
+                                <i class="fa-brands fa-whatsapp fa-fw fa-lg"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Contact us on Email">
+                                <i class="fa-solid fa-at fa-fw fa-lg"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Follow us on Facebook">
+                                <i class="fa-brands fa-facebook fa-fw fa-lg"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Follow us on Instagram">
+                                <i class="fa-brands fa-instagram fa-fw fa-lg"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Follow us on Twitter">
+                                <i class="fa-brands fa-twitter fa-fw fa-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="info">
+                        <div class="logo">
+                            <h2>white dove</h2>
+                            <img src=" Images/logo-page_.png" alt="">
+                        </div>
+                        <div class="main-menu" onclick="openSideNav()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul class="list-content" id="closeNav">
+                            <div class="side-nav">
+                                <span>main menu</span>
+                                <a href="javascript:void(0)" onclick="closeSideNav()" class="closebtn">&times;</a>
+                            </div>
+                            <li id="dropdown">
+                                <a href="#">collections</a>
+                                <div class="mega-menu" id="mega">
+                                    <div class="box" title="Click On Link To View Objects Of Modern-White Dove Collection">
+                                        <img src=" Images/collections page-one_1.jpg" alt="Modern-Collection">
+                                        <div class="info">
+                                            <a href="modern.html">modern-white dove
+                                                <span>collection</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="box" title="Click On Link To View Objects Of Contemporary-White Dove Collection">
+                                        <img src=" Images/collections page-two1.jpg" alt="Contemporary-Collection">
+                                        <div class="info">
+                                            <a href="contemporary.html">contemporary-white dove
+                                                <span>collection</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="box" title="Click On Link To View Objects Of Classic-White Dove Collection">
+                                        <img src=" Images/collection@5.jpg" alt="Classic-Collection">
+                                        <div class="info">
+                                            <a href="classic.html">classic-white dove
+                                                <span>collection</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="dropdown_2">
+                                <a href="#">products</a>
+                                <div class="products-list" id="products">
+                                    <a href="products.html">bed</a>
+                                    <a href="sofa.html">Sofas</a>
+                                    <a href="chair.html">chairs</a>
+                                    <a href="lighting.html">lighting</a>
+                                    <a href="tables.html">tables</a>
+                                    <a href="dining-tables.html">dining tables</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="news.html">news</a>
+                            </li>
+                            <li id="dropdown_3">
+                                <a href="#">company</a>
+                                <div class="info-company" id="company">
+                                    <a href="abouts-us.html">about us</a>
+                                    <a href="history.html">history of white dove</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="contact-us.html">contact us</a>
+                            </li>
+                            <!-- --------------- -->
+                            <ul class="info" id="closeNav_2">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-magnifying-glass fa-fw fa-lg"></i>
+                                        <span>search</span>
+                                    </a>
+                                    <form>
+                                        <i class="fa-solid fa-arrow-right-long fa-fade arrow-right"></i>
+                                        <input type="search" name="search" placeholder="search from here">
+                                    </form>
+                                </li>
+                                <li>
+                                    <a href="sign.html">
+                                        <i class="fa-solid fa-user fa-fw fa-lg"></i>
+                                        <span>account</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">
+                                        <i class="fa-solid fa-cart-arrow-down fa-fw fa-lg"></i>
+                                        <span>cart</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="links" id="closeNav_3">
+                                <li>
+                                    <a href="#" title="Contact us on WhatsApp">
+                                        <i class="fa-brands fa-whatsapp fa-fw fa-lg"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Contact us on Email">
+                                        <i class="fa-solid fa-at fa-fw fa-lg"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us on Facebook">
+                                        <i class="fa-brands fa-facebook fa-fw fa-lg"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us on Instagram">
+                                        <i class="fa-brands fa-instagram fa-fw fa-lg"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us on Twitter">
+                                        <i class="fa-brands fa-twitter fa-fw fa-lg"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <ul class="info">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-magnifying-glass fa-fw fa-lg"></i>
+                                <span>search</span>
+                            </a>
+                            <form>
+                                <i class="fa-solid fa-arrow-right-long fa-fade arrow-right"></i>
+                                <input type="search" name="search" placeholder="search from here">
+                                <i class="fa-solid fa-arrow-left-long fa-fade arrow-left"></i>
+                            </form>
+                        </li>
+                        <li>
+                            <a href="sign.html">
+                                <i class="fa-solid fa-user fa-fw fa-lg"></i>
+                                <span>account</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cart.html">
+                                <i class="fa-solid fa-cart-arrow-down fa-fw fa-lg"></i>
+                                <span>cart</span>
+                            </a>
+                        </li>
+                        <div class="main-menu" onclick="openSideNav_2()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start Cart Page -->
+        <div class="cart_page">
+            <div class="container">
+                <div class="home-page">
+                    <a href="index.html">home</a>
+                    <span>/ my shopping cart</span>
+                </div>
+                <div class="page">
+                    <img src=" Images/page-cart.jpg" alt="shopping Cart">
+                    <div class="cart">
+                            <span>shopping cart</span>
+                        <div>
+                            <i class="fa-solid fa-cart-shopping "></i>
+                            <span>no products in the cart.</span>
+                        </div>
+                        <div class="shop center-flex">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <a href="products.html">continue shopping</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Cart Page -->
+        <!-- Start subscribe -->
+        <section class="subscribe Subscribe-products">
+            <div class="container">
+                <p>subscribe to our newsletter and receive the latest product news, stories, invitations to
+                    exclusive
+                    design events and
+                    much, much more.</p>
+                <form>
+                    <input type="email" name="email" placeholder="enter email address">
+                    <input type="submit" value="subscribe">
+                </form>
+            </div>
+        </section>
+        <!-- End subscribe -->
+        <!-- Start Footer -->
+        <footer>
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <h2>white dove</h2>
+                    <img src=" Images/logo-page_.png" alt="">
+                </a>
+                <ul class="links">
+                    <li>
+                        <a href="#" title="Contact us on WhatsApp">
+                            <i class="fa-brands fa-whatsapp fa-fw fa-lg"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Contact us on Email">
+                            <i class="fa-solid fa-at fa-fw fa-lg"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Follow us on Facebook">
+                            <i class="fa-brands fa-facebook fa-fw fa-lg"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Follow us on Instagram">
+                            <i class="fa-brands fa-instagram fa-fw fa-lg"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Follow us on Twitter">
+                            <i class="fa-brands fa-twitter fa-fw fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-content">
+                    <li>
+                        <a href="contemporary.html">collections</a>
+                    </li>
+                    <li>
+                        <a href="products.html">products</a>
+                    </li>
+                    <li>
+                        <a href="news.html">news</a>
+                    </li>
+                    <li>
+                        <a href="abouts-us.html">company</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html">contact us</a>
+                    </li>
+                </ul>
+                <ul class="info">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass fa-fw fa-lg"></i>
+                            <span>search</span>
+                        </a>
+        
+                    </li>
+                    <li>
+                        <a href="sign.html">
+                            <i class="fa-solid fa-user fa-fw fa-lg"></i>
+                            <span>account</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-cart-arrow-down fa-fw fa-lg"></i>
+                            <span>cart</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="contact">
+                    <div class="data">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span>al riyadh, saudi arabia</span>
+                    </div>
+                    <div class="data">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>info@example.com</span>
+                    </div>
+                    <div class="data">
+                        <i class="fa-solid fa-phone-volume"></i>
+                        <span>+966991274892</span>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="box">
+                        <img src=" Images/sofa-darkred-1.jpg" alt="Sofa-DarkRed">
+                    </div>
+                    <div class="box">
+                        <img src=" Images/blue-chair1.jpg" alt="Blue-Coach">
+                    </div>
+                    <div class="box">
+                        <img src=" Images/sofa-black-1.jpg" alt="Sofa-Black">
+                    </div>
+                    <div class="box">
+                        <img src=" Images/sofa-light2.jpg" alt="Sofa-DarkRed">
+                    </div>
+                    <div class="box">
+                        <img src=" Images/living-room2.jpg" alt="Sofa-DarkRed">
+                    </div>
+                    <div class="box">
+                        <img src=" Images/Collections-page-two_6.jpg" alt="Sofa-DarkRed">
+                    </div>
+                </div>
+            </div>
+            <div class="email" title="Contact With Me 'nedaaryad@gmail.com'">
+                <span>made by ' nedaa ryad '</span>
+                <a href="mailto:nedaaryad@gmail.com">
+                    <i class="fa-solid fa-envelope fa-fade"></i>
+                </a>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <!-- FontAwesome Library-->
+        <script src="./JS/all.min.js"></script>
+        <!-- Main./JS File -->
+        <script src="./JS/main.js"></script>
+    </body>
+
+</html>
